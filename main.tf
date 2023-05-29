@@ -26,7 +26,6 @@ tags = merge(var.tags, { Name = "${var.env}-igw" })
 
 resource "aws_eip" "ngw" {
   count = length(var.subnets["public"].cidr_block)
-  vpc = true
   tags  = merge(var.tags, { Name = "${var.env}-ngw" })
 }
 
