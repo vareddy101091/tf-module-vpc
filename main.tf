@@ -71,3 +71,4 @@ resource "aws_route" "peering_connection_route_in_default_vpc" {
   destination_cidr_block = var.cidr_block
 }
 
+
